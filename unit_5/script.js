@@ -140,8 +140,8 @@ document.querySelector(".btn15").addEventListener("click", () => {
 // Task 16
 document.querySelector(".btn16").addEventListener("click", () => {
     let div16 = document.querySelectorAll('input[name="p1"]');
-    for(let i = 0; i < div16.length; i++) {
-        if (div16[i].checked){
+    for (let i = 0; i < div16.length; i++) {
+        if (div16[i].checked) {
             document.querySelector(".out-16").textContent = div16[i].value;
         }
     }
@@ -157,32 +157,30 @@ document.querySelector(".btn17").addEventListener("click", () => {
 
 // Task 18
 let div18 = document.querySelectorAll('input[name="p1"]');
-for(let i = 0; i < div18.length; i++){
+for (let i = 0; i < div18.length; i++) {
     div18[i].setAttribute('value', i);
 }
 
 // Task 19
 document.querySelector(".btn19").addEventListener("click", () => {
- let div19 = document.querySelectorAll('input[name="p2"]');
- for (let i = 0; i < div19.length; i++){
-     if(div19[i].checked){
-         if(div19[i].value == "6"){
-             document.querySelector(".out-19").textContent = "true";
-         }else{
-            document.querySelector(".out-19").textContent = "false";
-         }
-     }
- }
+    let div19 = document.querySelectorAll('input[name="p2"]');
+    for (let i = 0; i < div19.length; i++) {
+        if (div19[i].checked) {
+            if (div19[i].value == "6") {
+                document.querySelector(".out-19").textContent = "true";
+            } else {
+                document.querySelector(".out-19").textContent = "false";
+            }
+        }
+    }
 
 });
 
 
 // Task 20
- 
-    let div20 = document.querySelectorAll('input[name="p3"]');
-    for(let i = 0; i<div20.length; i++){
-        div20[i].oninput = function(){
-           console.log("был изменён инпут");
-        };
-    }
- 
+let div20 = document.querySelectorAll('input[name="p3"]');
+for (let i = 0; i < div20.length; i++) {
+    div20[i].oninput = function () {
+        console.log("был изменён инпут");
+    };
+}
