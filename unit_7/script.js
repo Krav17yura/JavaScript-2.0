@@ -15,8 +15,6 @@ displayName("Sergey");
 
 
 //Task 3
-
-
 document.querySelector(".btn3").addEventListener("click", () => {
     multiplay(10);
 });
@@ -46,7 +44,6 @@ function showName2(name) {
 
 
 //Task 6
-
 function showNumber(one, two) {
     if (one < two) {
         console.log(two);
