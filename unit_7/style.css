@@ -1,0 +1,36 @@
+html,
+body {
+    font-family: serif;
+    background-color: #f8f8f8;
+}
+
+body {
+    margin: 20px auto;
+    width: 95%;
+}
+pre {
+    border: 1px solid #c0c0c0;
+    background: #fff;
+    padding: 5px;
+    font-family: monospace;
+}
+.div15,
+.div16,
+.div17,
+.div18,
+.div19,
+.go {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+}
+.go {
+    margin-right: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+.wrapper {
+    display: flex;
+
+}
+ 

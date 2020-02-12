@@ -68,6 +68,8 @@ for (let i = 5; i > 0; i--) {
 }
 
 
+
+
 //Task 7
 let out7 = document.querySelector("#output7");
 for (let i = 3; i > 0; i--) {
@@ -83,9 +85,12 @@ for (let i = 3; i > 0; i--) {
 
 //Task 8
 let out8 = document.querySelector("#output8");
+
+
 for (let i = 0; i <= 3; i++) {
     for (let k = 0; k < i; k++) {
         out8.innerHTML += "*";
+
     }
     out8.innerHTML += "<br>";
 }
@@ -99,15 +104,15 @@ for (let i = 2; i > 0; i--) {
 
 //Task 9
 let out9 = document.querySelector("#output9");
-for (let i = 0; i < 5; i++) {
 
+for (let i = 0; i < 5; i++) {
     if (i == 0 || i == 4) {
         for (let k = 0; k < 6; k++) {
             out9.innerHTML += "*";
         }
     } else {
-        for (let k = 0; k < 6; k++) {
-            if (k == 0 || k == 5) {
+        for (let j = 0; j < 6; j++) {
+            if (j == 0 || j == 5) {
                 out9.innerHTML += "*";
             } else {
                 out9.innerHTML += "&ensp;";
@@ -150,18 +155,19 @@ document.querySelector(".btn10").addEventListener("click", () => {
 
 //Task 11
 let out11 = document.querySelector("#output11");
+
 for (let i = 6; i < 8; i++) {
     for (let k = 1; k <= 10; k++) {
-        out11.innerHTML += `${i}*${k} = ${i*k}<br>`;
+        out11.innerHTML += `${i}*${k} = ${i*k} <br>`;
     }
     out11.innerHTML += "<hr>";
 }
 
-
 //Task 12
 let out12 = document.querySelector("#output12");
+
 for (let i = 0; i <= 5; i++) {
-    for (let k = 0; k <= i; k++) {
+    for (let k = 1; k <= i; k++) {
         out12.innerHTML += k + " ";
     }
     out12.innerHTML += "<br>";
@@ -170,10 +176,11 @@ for (let i = 0; i <= 5; i++) {
 
 //Task 13
 let out13 = document.querySelector("#output13");
+
 for (let i = 0; i < 5; i++) {
     for (let k = 1; k <= 10; k++) {
         if (k == 10) {
-            out13.innerHTML += `${i+1}0 `;
+            out13.innerHTML += `${i+1}0`;
         } else {
             out13.innerHTML += `${i}${k} `;
         }
@@ -184,6 +191,7 @@ for (let i = 0; i < 5; i++) {
 
 //Task 14
 let out14 = document.querySelector("#output14");
+
 for (let i = 5; i > 0; i--) {
     for (let k = i; k > 0; k--) {
         out14.innerHTML += k + " ";
@@ -194,13 +202,13 @@ for (let i = 5; i > 0; i--) {
 
 //Task 15
 let out15 = document.querySelector("#output15");
+
 for (let i = 1; i < 6; i++) {
     for (let k = 5; k > i; k--) {
         out15.innerHTML += "x ";
     }
     for (let j = i; j > 0; j--) {
         out15.innerHTML += j + " ";
-
     }
     out15.innerHTML += "<br>";
 }
@@ -208,8 +216,9 @@ for (let i = 1; i < 6; i++) {
 
 //Task 16
 let out16 = document.querySelector("#output16");
-for (let i = 0; i <= 5; i++) {
-    for (let j = 0; j < i; j++) {
+
+for (let i = 0; i < 6; i++) {
+    for (let k = 0; k < i; k++) {
         out16.innerHTML += i + " ";
     }
     out16.innerHTML += "<br>";
@@ -218,8 +227,9 @@ for (let i = 0; i <= 5; i++) {
 
 //Task 17
 let out17 = document.querySelector("#output17");
-for (let i = 5; i >= 1; i--) {
-    for (let j = i; j <= 5; j++) {
+
+for (let i = 5; i > 0; i--) {
+    for (let k = i; k <= 5; k++) {
         out17.innerHTML += i + " ";
     }
     out17.innerHTML += "<br>";
@@ -228,9 +238,10 @@ for (let i = 5; i >= 1; i--) {
 
 //Task 18
 let out18 = document.querySelector("#output18");
-for (let i = 5; i >= 1; i--) {
+
+for (let i = 5; i > 0; i--) {
     if (i % 2 == 0) {
-        for (let j = i; j <= 5; j++) {
+        for (let k = i; k <= 5; k++) {
             out18.innerHTML += "x ";
         }
     } else {
@@ -243,16 +254,17 @@ for (let i = 5; i >= 1; i--) {
 
 //Task 19
 let out19 = document.querySelector("#output19");
+
 for (let i = 0; i < 3; i++) {
     for (let j = i; j < 3; j++) {
         out19.innerHTML += "&ensp;";
     }
     for (let k = 0; k < 5 + i * 2; k++) {
-
-        out19.innerHTML += '*';
+        out19.innerHTML += "*";
     }
-    out19.innerHTML += '<br>';
+    out19.innerHTML += "<br>";
 }
+
 
 
 //Task 20
@@ -267,7 +279,7 @@ for (let i = 0; i < 3; i++) {
     }
     out20.innerHTML += '<br>';
 }
-for(let i = 2; i >= 1; i--){
+for (let i = 2; i >= 1; i--) {
     for (let j = i; j < 3; j++) {
         out20.innerHTML += "&ensp;";
     }
