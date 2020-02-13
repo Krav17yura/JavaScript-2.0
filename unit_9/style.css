@@ -1,0 +1,42 @@
+html,
+body {
+    font-family: serif;
+    background-color: #f8f8f8;
+}
+
+body {
+    margin: 20px auto;
+    width: 95%;
+}
+.u-1{
+    background: red;
+}
+
+.css-1{
+    background: green;
+}
+.css-2{
+    background: palevioletred;
+}
+
+.css-3{
+    background: purple;
+}
+.active{
+    background: yellow;
+}
+.css-4{
+    background: purple;
+}
+.span-13{
+    background: yellow;
+}
+.span-14{
+    background: rgb(29, 38, 168);
+}
+.span-15{
+    background: rgb(64, 168, 73);
+}
+.u-16__out{
+    background: palevioletred;
+}
