@@ -186,5 +186,4 @@
  for (let i = 0; i < arr20.length; i++) {
      sum20 += arr20[i];
  }
-
  console.log(sum20);
