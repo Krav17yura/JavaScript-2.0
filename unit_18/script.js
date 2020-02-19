@@ -71,42 +71,42 @@
 
 
  // Task 5
- function func5(){
+ function func5() {
       let a5_res = [];
       a5_res.push(this.getAttribute("data"));
       document.querySelector(".out-5").textContent = a5_res;
  }
 
  document.querySelectorAll(".task-5").forEach(item => item.onclick = func5);
- 
+
 
 
  // Task 6 
- function func6(){
-    let str6='helloworld';
-    let a6_res = [];
-    a6_res = str6.split("");
-    console.log(a6_res);
-    document.querySelector(".out-6").textContent = a6_res;
+ function func6() {
+      let str6 = 'helloworld';
+      let a6_res = [];
+      a6_res = str6.split("");
+      console.log(a6_res);
+      document.querySelector(".out-6").textContent = a6_res;
  }
  document.querySelector(".b-6").onclick = func6;
 
 
  // Task 7
- function func7(){
-      let str7='hello world hi mazai';
+ function func7() {
+      let str7 = 'hello world hi mazai';
       let a7_res = [];
       a7_res = str7.split(" ");
       document.querySelector(".out-7").textContent = a7_res;
-      
+
  }
  document.querySelector(".b-7").onclick = func7;
 
 
 
  // Task 8
- function func8(){
-      let a8 = [1,2,66,77,15];
+ function func8() {
+      let a8 = [1, 2, 66, 77, 15];
       let a8_res = a8.join("-");
       document.querySelector(".out-8").textContent = a8_res;
 
@@ -117,16 +117,19 @@
 
 
  // Tak 9 
- function func9(){
-      let a9 = [["hi", "mahai"], ["test", "best"]];
+ function func9() {
+      let a9 = [
+           ["hi", "mahai"],
+           ["test", "best"]
+      ];
       let a9_res = "";
       a9.forEach(item => {
-         item.forEach(key => {
-             a9_res += key +"-";
-         });
+           item.forEach(key => {
+                a9_res += key + "-";
+           });
       });
-           
-      
+
+
       document.querySelector(".out-9").textContent = a9_res;
 
  }
@@ -136,10 +139,15 @@
 
 
  // Task 10
- function func10 (){
-      let a10 = {name: "ivan", age: 15, sex: 1, id: 45};
-      let a10_res ="";
-      for(let key in a10){
+ function func10() {
+      let a10 = {
+           name: "ivan",
+           age: 15,
+           sex: 1,
+           id: 45
+      };
+      let a10_res = "";
+      for (let key in a10) {
            a10_res += `${key}=${a10[key]} & `;
       }
       console.log(a10_res);
