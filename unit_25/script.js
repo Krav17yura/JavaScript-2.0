@@ -174,39 +174,128 @@ document.querySelector('.b-10').onclick = t10;
 
 // Task 11 ============================================
 /*  Отправьте POST запрос на сайт http://getpost.itgid.info/index2.php. В качестве action укажите 2. Добавьте параметр name с вашим именем на латинице. Если все сделано верно, сервер пришлет строку hello ваше имя. Не забывайте указывать параметр auth (ключ в чате). Выведите в out-11 результат. Запускаться функция должна по нажатию b-11. */
-
+function t11(){
+    let xhttp11 = new XMLHttpRequest();
+    xhttp11.onreadystatechange = function(){
+          if(this.readyState == 4&& this.status == 200){
+              document.querySelector(".out-11").textContent = this.responseText;
+          }
+    };
+    xhttp11.open("POST", "server.php", true);
+    xhttp11.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp11.send('auth=zhrgB3DxC8LoG7Gcilzg&action=2&name=Karl');
+}
+document.querySelector(".b-11").onclick = t11;
 
 
 // Task 12 ============================================
 /*  Отправьте POST запрос на сайт http://getpost.itgid.info/index2.php. В качестве action укажите 3. Добавьте параметр num1 и num2 содержащие числа. Если все сделано верно, сервер вернет сумму чисел. Не забывайте указывать параметр auth (ключ в чате). Выведите в out-12 результат. Запускаться функция должна по нажатию b-12.*/
-
+function t12(){
+    let xhttp12 = new XMLHttpRequest();
+    xhttp12.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.querySelector(".out-12").textContent = this.responseText;
+        }
+    };
+    xhttp12.open("POST", "server.php", true);
+    xhttp12.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp12.send('auth=zhrgB3DxC8LoG7Gcilzg&action=3&num1=10&num2=11');
+}
+document.querySelector(".b-12").onclick = t12;
 
 
 // Task 13 ============================================
 /*  Отправьте POST запрос на сайт http://getpost.itgid.info/index2.php. В качестве action укажите 4. Добавьте параметр num1 и num2 содержащие числа. Если все сделано верно, сервер вернет случайное число в заданном диапазоне. Не забывайте указывать параметр auth (ключ в чате). Выведите в out-13 результат. Запускаться функция должна по нажатию b-13.*/
-
+function t13(){
+    let xhttp13 = new XMLHttpRequest();
+    xhttp13.onreadystatechange = function(){
+       if(this.readyState == 4 && this.status == 200){
+           document.querySelector(".out-13").textContent = this.responseText;
+       }
+    }; 
+    xhttp13.open("POST", "server.php");
+    xhttp13.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp13.send('auth=zhrgB3DxC8LoG7Gcilzg&action=4&num1=11&num2=18');
+}
+document.querySelector(".b-13").onclick = t13;
 
 
 // Task 14 ============================================
 /*  Отправьте POST запрос на сайт http://getpost.itgid.info/index2.php. В качестве action укажите 5. Если все сделано верно, сервер вернет текущее время и дату. Не забывайте указывать параметр auth (ключ в чате). Выведите в out-14 результат. Запускаться функция должна по нажатию b-14.*/
-
+function t14(){
+    let xhttp14 = new XMLHttpRequest();
+    xhttp14.onreadystatechange = function(){
+         if(this.readyState == 4 && this.status == 200){
+             document.querySelector(".out-14").textContent = this.responseText;
+         }
+    };
+    xhttp14.open("POST", "server.php");
+    xhttp14.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp14.send("auth=zhrgB3DxC8LoG7Gcilzg&action=5");
+}
+document.querySelector(".b-14").onclick = t14;
 
 
 // Task 15============================================
 /*  Отправьте POST запрос на сайт http://getpost.itgid.info/index2.php. В качестве action укажите 6. Добавьте параметр num1 и num2 содержащие числа. Если все сделано верно, сервер вернет большее число. Не забывайте указывать параметр auth (ключ в чате). Выведите в out-15 результат. Запускаться функция должна по нажатию b-15. */
-
+function t15(){
+    let xhttp15 = new XMLHttpRequest();
+    xhttp15.onreadystatechange = function(){
+       if(this.readyState == 4 && this.status == 200){
+           document.querySelector(".out-15").textContent = this.responseText;
+       }
+    };
+    xhttp15.open("POST", 'server.php');
+    xhttp15.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp15.send("auth=zhrgB3DxC8LoG7Gcilzg&action=6&num1=12&num2=14");
+}
+document.querySelector(".b-15").onclick = t15;
 
 
 // Task 16 ============================================
 /*  Отправьте POST запрос на сайт http://getpost.itgid.info/index2.php. В качестве action укажите 7. Если все сделано верно, сервер случайную ссылку на изображение. Не забывайте указывать параметр auth (ключ в чате). Выведите в out-16 результат. Запускаться функция должна по нажатию b-16. */
-
+function t16(){
+    let xhttp16 = new XMLHttpRequest();
+    xhttp16.onreadystatechange = function(){
+       if(this.readyState == 4 && this.status == 200){
+           document.querySelector(".out-16").textContent = this.responseText;
+       }
+    };
+    xhttp16.open("POST", "server.php");
+    xhttp16.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp16.send("auth=zhrgB3DxC8LoG7Gcilzg&action=7");
+}
+document.querySelector(".b-16").onclick = t16;
 
 
 // Task 17 ============================================
 /*  Отправьте POST запрос на сайт http://getpost.itgid.info/index2.php. В качестве action укажите 8. В качестве параметра по очереди укажите year равный году вашего рождения. Если все правильно сервер вернет ваш возраст. Не забывайте указывать параметр auth (ключ в чате).Выведите в out-17 результат. Запускаться функция должна по нажатию b-17. */
-
+function t17(){
+    let xhttp17 = new XMLHttpRequest();
+    xhttp17.onreadystatechange = function(){
+         if(this.readyState == 4 && this.status == 200){
+             document.querySelector(".out-17").textContent = this.responseText;
+         }
+    };
+    xhttp17.open("POST", "server.php");
+    xhttp17.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp17.send("auth=zhrgB3DxC8LoG7Gcilzg&action=8&year=2000");
+}
+document.querySelector(".b-17").onclick = t17;
 
 
 // Task 18 ============================================
 /*  Отправьте POST запрос на сайт http://getpost.itgid.info/index2.php. В качестве action укажите 9. В качестве параметра по очереди укажите m = 1, d=1, y=1. Если все сделано верно, 
 сервер возвратит дату или месяц или год. Не забывайте указывать параметр auth (ключ в чате). Выведите в out-18 результат. Запускаться функция должна по нажатию b-18. */
+function t18(){
+    let xhttp18 = new XMLHttpRequest();
+    xhttp18.onreadystatechange = function(){
+         if (this.readyState == 4 && this.status == 200){
+             document.querySelector(".out-18").textContent = this.responseText;
+         }
+    };
+    xhttp18.open("POST", "server.php");
+    xhttp18.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp18.send("auth=zhrgB3DxC8LoG7Gcilzg&action=18&m=1&d=1&y=1");
+}
+document.querySelector(".b-18").onclick = t18;  
